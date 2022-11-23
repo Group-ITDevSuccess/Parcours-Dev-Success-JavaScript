@@ -1,0 +1,1 @@
+document.getElementById('myColoredDiv').className = 'cadetblue';

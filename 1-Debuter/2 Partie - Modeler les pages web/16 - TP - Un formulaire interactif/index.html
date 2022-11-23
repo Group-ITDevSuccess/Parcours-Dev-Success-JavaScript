@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tp : Une formulaire interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="myForm" action="">
+    <span class="form_col">Sexe :</span>
+    <label for=""><input type="radio" name="sex" value="H">Homme</label>
+    <label for=""><input type="radio" name="sex" value="F">Femme</label>
+    <span class="tooltip">Vous devez sélectionner votre sexe</span>
+    <br/><br/>
+
+    <label for="lastName" class="form_col">Nom : </label>
+    <input type="text" name="lastName" id="lastName">
+    <span class="tooltip">Un nom ne peut pas faire moins de 2 caractères.</span>
+    <br/><br/>
+
+    <label for="firstName" class="form_col">Prénom : </label>
+    <input type="text" name="firstName" id="firstName">
+    <span class="tooltip">Une prénom ne peut pas faire moins de 2 caractères.</span>
+    <br/><br/>
+
+    <label for="age" class="form_col">Âge : </label>
+    <input type="text" name="age" id="age">
+    <span class="tooltip">L'agedoit être compris entre 5 et 65 ans</span>
+    <br><br>
+
+    <label for="login" class="form_col">Pseudo : </label>
+    <input type="text" name="login" id="login">
+    <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères.</span>
+    <br><br>
+
+    <label for="pwd1" class="form_col">Mot de Passe : </label>
+    <input type="text" name="pwd1" id="pwd1">
+    <span class="tooltip">Le mot de passe ne doit pas faire moins de 6 caractères.</span>
+    <br><br>
+
+    <label for="pwd2" class="form_col">Confirmer le Mot de Passe : </label>
+    <input type="text" name="pwd2" id="pwd2">
+    <span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span>
+    <br><br>
+
+    <label for="country" class="form_col">Pay : </label>
+    <select name="country" id="country">
+      <option value="none">Sélectionnez votre pays de résidence.</option>
+      <option value="en">Angleterre</option>
+      <option value="us">Etat-Unis</option>
+      <option value="fr">France</option>
+    </select>
+    <span class="tooltip">Vous devez sélectionner votre pays de résidence</span>
+    <br><br>
+    
+    <span class="form_col"></span>
+    <label for=""><input type="checkbox" name="news" id="">Je désire recevoir la newsletter chaque mois.</label>
+    <br><br>
+    
+    <span class="form_col"></span>
+    <input type="submit" value="M'inscrire"> <input type="reset" value="Réinitialiser">
+
+    <script src="script.js"></script>
+  </form>
+</body>
+</html>

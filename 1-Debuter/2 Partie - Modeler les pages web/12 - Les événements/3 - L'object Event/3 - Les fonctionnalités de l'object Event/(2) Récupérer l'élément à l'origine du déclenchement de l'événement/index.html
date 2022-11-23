@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="result"></p>
+
+  <div id="parent">
+      Parent
+      <div id="child1">Enfant N°1</div>
+      <div id="child2">Enfant N°2</div>
+  </div>
+
+  <script>
+        var parent = document.getElementById("parent"),
+            result = document.getElementById("result");
+
+        parent.addEventListener('mouseover', function (e){
+            result.innerHTML = "L'élément déclencheur de l'événement \" mouseover \" possède l'ID : "+e.target.id;
+        });
+  </script>
+</body>
+</html>

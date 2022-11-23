@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span id="clickme">Cliquez-moi</span>
+  <script>
+    var element = document.getElementById("clickme");
+
+    function myFunction (){
+        alert("Salam Alaikum");
+    }
+
+    // Premier événement click
+    element.addEventListener('click', function (){
+        alert("Et de un !");
+    });
+
+    // Deuxième événement click
+    element.addEventListener('click', function (){
+        alert("Et de deux !");
+    });
+
+
+    element.removeEventListener('click',myFunction
+    })
+  </script>
+</body>
+</html>

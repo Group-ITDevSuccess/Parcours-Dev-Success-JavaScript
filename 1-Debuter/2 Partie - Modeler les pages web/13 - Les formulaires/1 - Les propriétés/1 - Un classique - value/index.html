@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="text" name="" id="text" value="Vous n'avez pas le focus !">
+
+  <script>
+    var text = document.getElementById('text');
+
+    text.addEventListener('focus', function (e){
+      e.target.value = "Vous avez le focus !";
+    });
+
+    text.addEventListener('blur', function (e){
+      e.target.value = "Vous n'avez pas le focus !";
+    });
+
+  </script>
+</body>
+</html>

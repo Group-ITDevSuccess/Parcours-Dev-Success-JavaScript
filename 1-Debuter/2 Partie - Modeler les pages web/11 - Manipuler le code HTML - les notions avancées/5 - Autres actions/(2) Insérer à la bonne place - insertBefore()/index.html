@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div>
+    <p class="myP">Un peu de texte <a href="">et un lien</a></p>
+  </div>
+  <script>
+    var paragraph = document.querySelector('p');
+    var emphasis = document.createElement('em'),
+        emphasisText = document.createTextNode(' en emphase légère ');
+
+    emphasis.appendChild(emphasisText);
+
+    paragraph.insertBefore(emphasis, paragraph.lastChild);
+  </script>
+</body>
+</html>

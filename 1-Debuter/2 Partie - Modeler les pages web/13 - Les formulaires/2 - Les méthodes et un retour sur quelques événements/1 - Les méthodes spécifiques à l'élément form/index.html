@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" id="myForm">
+        <input type="text" name="" id="" value="Entrez un texte">
+        <br/><br/>
+        <input type="submit" value="Submit !">
+        <input type="reset" value="Reset !">
+    </form>
+
+    <script>
+        var myForm =  document.getElementById("myForm");
+
+        myForm.addEventListener('submit', function (e){
+            alert("Vous avez envoyé le formulaire ! \n\n Mais celui-ci a été bloqué pour que vous " +
+                "ne changiez pas de page.");
+            e.preventDefault();
+        });
+
+        myForm.addEventListener('reset', function (e){
+            alert("Vous avez réinitialisé le formulaire !");
+        });
+
+    </script>
+</body>
+</html>

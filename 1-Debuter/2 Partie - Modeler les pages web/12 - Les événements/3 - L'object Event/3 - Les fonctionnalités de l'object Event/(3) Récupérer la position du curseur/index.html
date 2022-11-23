@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="position"></p>
+
+  <script>
+        var position = document.getElementById("position");
+
+        document.addEventListener('mouseover', function (e){
+            position.innerHTML = 'Position X : '+e.clientX+'px <br/> Position Y : '+e.clientY+'px';
+            console.log('Position X : '+e.clientX+'px');
+            console.log('Position Y : '+e.clientY+'px');
+        });
+
+  </script>
+</body>
+</html>

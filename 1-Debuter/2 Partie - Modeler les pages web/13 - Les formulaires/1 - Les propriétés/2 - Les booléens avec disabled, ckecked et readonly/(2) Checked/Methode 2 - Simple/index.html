@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label><input type="radio" name="check" value="1">Case n°1</label> <br/>
+    <label><input type="radio" name="check" value="2">Case n°2</label> <br/>
+    <label><input type="radio" name="check" value="3">Case n°3</label> <br/>
+    <label><input type="radio" name="check" value="4">Case n°4</label>
+
+    <br>
+    <br>
+
+    <input type="button" value="Afficher la case cochée" onclick="check();">
+
+  <script>
+    function check(){
+        // On utilise querySelectorAll()
+        var inputs = document.querySelectorAll('input[type=radio]:checked'),
+            inputsLength = inputs.length;
+
+        for (var i = 0; i < inputsLength;i++){
+            alert('La case coché est le n°'+inputs[i].value)
+        }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #text{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <span id="text"></span>
+
+  <script !src="">
+    var text = document.getElementById('text'),
+        color = getComputedStyle(text).color;
+
+    alert("La couleur du Style est de : "+color);
+  </script>
+</body>
+</html>

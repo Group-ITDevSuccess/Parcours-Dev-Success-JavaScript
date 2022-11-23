@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span id="clickme">Cliquez-moi</span>
+  <script>
+    var element = document.getElementById("clickme");
+
+    /*
+        L'argument "e" va récupérer une référence vers l'objet "Event".
+     */
+    element.addEventListener('click', function (e){
+        alert(e.type);
+    });
+
+  </script>
+</body>
+</html>

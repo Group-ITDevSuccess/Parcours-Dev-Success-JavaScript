@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span id="clickme">Cliquez-moi</span>
+  <script>
+    var element = document.getElementById("clickme");
+
+    element.addEventListener('click', function (e){
+        e.target.innerHTML = 'Vous avez cliqué !';
+    });
+  </script>
+</body>
+</html>

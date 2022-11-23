@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <a href="https://www.openclassrooms.com" id="link">Cliquez-moi</a>
+
+  <script>
+      var link = document.getElementById("link");
+
+      link.addEventListener('click', function (e){
+          e.preventDefault(); // On bloque l'action par defaut de cet événement
+          alert('Vous avez cliqueé !');
+      });
+  </script>
+</body>
+</html>

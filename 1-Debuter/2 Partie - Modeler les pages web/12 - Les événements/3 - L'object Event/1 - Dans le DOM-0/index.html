@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span id="clickme">Cliquzez-moi</span>
+  <script>
+    var element = document.getElementById("clickme");
+
+    /*
+        L'argument "e" va récupérer une référence vers l'objet "Event"
+     */
+    element.onclick = function (e){
+      alert(e.type); // Ceci affiche le type de l'événement (click, mouseover, //etc.)
+    };
+  </script>
+</body>
+</html>
