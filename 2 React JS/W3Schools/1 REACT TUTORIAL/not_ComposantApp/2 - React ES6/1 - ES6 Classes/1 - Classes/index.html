@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="umd/react.development.js" crossorigin></script>
+    <script src="umd/react-dom.development.js" crossorigin></script>
+    <script src="umd/babel.min.js"></script>
+</head>
+<body>
+
+    <script>
+        class Car {
+            // the properties are assigned inside a constructor() method.
+            constructor(name) {
+                // Properties :
+                this.name = name;
+            }
+
+            // Create a méthod named "present" in Classes
+            present(){
+                return `I have a ${this.name}`;
+            }
+        }
+
+
+        mycar = new Car("Ford");
+
+        //document.write(mycar.name);
+        document.write(mycar.present())
+    </script>
+</body>
+</html>

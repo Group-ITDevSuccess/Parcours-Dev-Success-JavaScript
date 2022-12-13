@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="umd/react.development.js" crossorigin></script>
+    <script src="umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <h1>Function</h1>
+    <p>This demonstrates a regular function, NOT an arrow function.</p>
+    <p id="demo"></p>
+
+    <script>
+        hello = () => "Salam Alaikum !"
+
+        document.getElementById("demo").innerHTML = hello();
+    </script>
+</body>
+</html>

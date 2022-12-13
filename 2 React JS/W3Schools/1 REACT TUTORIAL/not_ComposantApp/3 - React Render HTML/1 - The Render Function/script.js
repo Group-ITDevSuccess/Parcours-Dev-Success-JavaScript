@@ -1,0 +1,1 @@
+ReactDOM.render(<p>Salam Alaikum Muriel</p>, document.getElementById('root'));

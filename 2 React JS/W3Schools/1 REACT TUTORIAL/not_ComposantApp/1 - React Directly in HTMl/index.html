@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="umd/react.development.js" crossorigin></script>
+    <script src="umd/react-dom.development.js" crossorigin></script>
+    <script src="umd/babel.min.js"></script>
+</head>
+<body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+        function Hello() {
+            return <h1>Salam Alaiku Muriel</h1>
+        }
+
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+    </script>
+</body>
+</html>
