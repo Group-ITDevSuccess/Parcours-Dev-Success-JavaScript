@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="logo.jpg" alt="" id="myImg" style="opacity: 1">
+
+<script>
+    var myImg = document.getElementById("myImg");
+
+   function anim() {
+       var s = myImg.style,
+           result = s.opacity = parseFloat(s.opacity) - 0.1;
+
+       if (result > 0.2){
+           /*
+            La fonction anim() fait appel à elle même si elle n'a pas terminé son travail
+            */
+           setTimeout(anim, 50);
+       }
+   }
+
+   anim();
+</script>
+
+</body>
+</html>

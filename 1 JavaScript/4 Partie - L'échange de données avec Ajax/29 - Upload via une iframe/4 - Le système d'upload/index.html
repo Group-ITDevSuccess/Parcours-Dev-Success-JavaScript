@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="upload.php" id="uploadForm" enctype="multipart/form-data" target="uploadFrame" method="post">
+    <label for="uploadFile">Image : </label>
+    <input type="file" name="uploadFile" id="uploadFile"> <br><br>
+    <input type="submit" value="Upload !" id="uploadSubmit">
+</form>
+
+<div id="uploadInfos">
+    <div id="uploadStatus">Aucun upload en cours</div>
+    <br><br>
+    <iframe name="uploadFrame" id="uploadFrame"></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.top.window.trigger(['<?php echo implode("','", $fakeArray) ?>']);

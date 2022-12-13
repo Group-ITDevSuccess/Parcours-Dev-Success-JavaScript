@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <audio id="audioPlayer" ontimeupdate="update(this)"> <!-- Nous utilons JS pour créer notre contrôle -->
+        <!--
+        <source src="Audio.ogg">
+        -->
+        <source src="Audio.mp3">
+
+    </audio>
+    <div>
+        <div id="progressBarControl">
+            <div id="progressBar" onclick="clickProgress('audioPlayer', this, event)">Pas de lecture</div>
+        </div>
+        <span id="progressTime">00:00</span>
+    </div>
+
+    <button class="control" onclick="play('audioPlayer', this)">Play</button>
+    <button class="control" onclick="resume('audioPlayer')">Stop</button>
+
+    <span class="volume">
+        <a class="strick1" onclick="volume('audioPlayer', 0)"></a>
+        <a class="strick2" onclick="volume('audioPlayer', 0.3)"></a>
+        <a class="strick3" onclick="volume('audioPlayer', 0.5)"></a>
+        <a class="strick4" onclick="volume('audioPlayer', 0.7)"></a>
+        <a class="strick5" onclick="volume('audioPlayer', 1)"></a>
+    </span>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+var myArray = [
+    'element1',
+    'element2',
+    'element3',
+    'element4'
+],
+    result = myArray.length;
+
+alert(result);
